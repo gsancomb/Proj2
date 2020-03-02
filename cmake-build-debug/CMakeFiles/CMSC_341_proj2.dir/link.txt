@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/CMSC_341_proj2.dir/main.cpp.o  -o CMSC_341_proj2 

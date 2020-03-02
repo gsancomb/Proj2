@@ -1,0 +1,7 @@
+/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/gsancomb/CLionProjects/CMSC_341_proj2
+-- Configuring done
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: driver.cpp
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
