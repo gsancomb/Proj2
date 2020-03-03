@@ -17,21 +17,21 @@ Insert data:
   key = 77, value = 14
 
 Dump list:
-Key: -24, Value: 3
-Key: -12, Value: 8
-Key: -1, Value: 12
-Key: 0, Value: 11
-Key: 7, Value: 5
-Key: 9, Value: 10
-Key: 16, Value: 1
-Key: 20, Value: 13
-Key: 34, Value: 0
-Key: 45, Value: 9
-Key: 53, Value: 4
-Key: 58, Value: 2
-Key: 77, Value: 14
-Key: 92, Value: 7
-Key: 97, Value: 6
+Key: -24, Value: 3  -0
+Key: -12, Value: 8  -1
+Key: -1, Value: 12  -2--
+Key: 0, Value: 11  -0
+Key: 7, Value: 5  -1
+Key: 9, Value: 10  -2--
+Key: 16, Value: 1  -0
+Key: 20, Value: 13  -1
+Key: 34, Value: 0  -2--
+Key: 45, Value: 9  -0
+Key: 53, Value: 4  -1
+Key: 58, Value: 2  -2--
+Key: 77, Value: 14  -0
+Key: 92, Value: 7  -1
+Key: 97, Value: 6  -2--
 
 RMQ query:
   query(45,77) = 2

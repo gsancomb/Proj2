@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/rmqlist.h.dir/driver.cpp.o  -o rmqlist.h 

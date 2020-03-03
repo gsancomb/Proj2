@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gsancomb/CLionProjects/CMSC_341_proj2/driver.cpp
+iostream
+-
+vector
+-
+set
+-
+random
+-
+functional
+-
+algorithm
+-
+rmqlist.h
+/home/gsancomb/CLionProjects/CMSC_341_proj2/rmqlist.h
+
+/home/gsancomb/CLionProjects/CMSC_341_proj2/rmqlist.h
+iostream
+-
+stdexcept
+-
+cmath
+-
+

@@ -30,8 +30,8 @@ public:
 private:
   pair<int,int> _data;
 };
-
-// Function prototypes
+//
+//// Function prototypes
 bool operator<(const KeyVal& kv1, const KeyVal& kv2) { return kv1.getKey() < kv2.getKey(); }
 int minimum(const vector<KeyVal> &data, int first, int last);
 int bsearch(const vector<KeyVal> &A, int key);
@@ -52,12 +52,11 @@ int main() {
     rmq.insert(keys[i], i);
   }
 
-  cout << "\nDump list:\n";
+  cout << "\nDump list: "<< rmq.size() << "\n";
   rmq.dumpList();
 
   cout << "\nRMQ query:\n";
-  cout << "  query(45,77) = " << rmq.query(45, 77) << endl;
-
+  cout << "  query(45,77) = " << rmq.query(45,77) << endl;
   cout << "\nDump RMQ table info:\n";
   rmq.dumpTable();
 
@@ -67,8 +66,17 @@ int main() {
   rmq.remove(-24);
   rmq.update(77,100);
 
-  cout << "\nDump list:\n";
+  cout << "\nDump list:  "<< rmq.size() << "\n";
   rmq.dumpList();
+
+    RMQList<int,int> copyofrmq;
+    copyofrmq = rmq;
+    rmq.remove(-12);
+    cout << "\nDump copy list:  "<< copyofrmq.size() << "\n";
+    copyofrmq.dumpList();
+    cout << "\nDump list:  "<< rmq.size() << "\n";
+    rmq.dumpList();
+
   cout << "\nDump RMQ table info:\n";
   rmq.dumpTable();
   cout << "\nRMQ query:\n";
@@ -84,7 +92,7 @@ int main() {
 
   // A medium-sized test.  Insert ~1000 entries. Check the result of
   // query() against the "brute force" RMQ solution.
-  
+
   cout << "*****************************************\n";
   cout << "Insert lots of data; check speed of query\n";
   cout << "*****************************************\n";
@@ -144,7 +152,7 @@ int main() {
   cout << "done!\n";
 
   rmq.dumpTable();
-  
+
   return 0;
 }
 

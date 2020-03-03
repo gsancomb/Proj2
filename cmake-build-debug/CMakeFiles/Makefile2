@@ -53,12 +53,12 @@ CMAKE_BINARY_DIR = /home/gsancomb/CLionProjects/CMSC_341_proj2/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/CMSC_341_proj2.dir/all
+all: CMakeFiles/rmqlist.h.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/CMSC_341_proj2.dir/clean
+clean: CMakeFiles/rmqlist.h.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +68,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/CMSC_341_proj2.dir
+# Target rules for target CMakeFiles/rmqlist.h.dir
 
 # All Build rule for target.
-CMakeFiles/CMSC_341_proj2.dir/all:
-	$(MAKE) -f CMakeFiles/CMSC_341_proj2.dir/build.make CMakeFiles/CMSC_341_proj2.dir/depend
-	$(MAKE) -f CMakeFiles/CMSC_341_proj2.dir/build.make CMakeFiles/CMSC_341_proj2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gsancomb/CLionProjects/CMSC_341_proj2/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target CMSC_341_proj2"
-.PHONY : CMakeFiles/CMSC_341_proj2.dir/all
+CMakeFiles/rmqlist.h.dir/all:
+	$(MAKE) -f CMakeFiles/rmqlist.h.dir/build.make CMakeFiles/rmqlist.h.dir/depend
+	$(MAKE) -f CMakeFiles/rmqlist.h.dir/build.make CMakeFiles/rmqlist.h.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gsancomb/CLionProjects/CMSC_341_proj2/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target rmqlist.h"
+.PHONY : CMakeFiles/rmqlist.h.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CMSC_341_proj2.dir/rule: cmake_check_build_system
+CMakeFiles/rmqlist.h.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gsancomb/CLionProjects/CMSC_341_proj2/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CMSC_341_proj2.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rmqlist.h.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gsancomb/CLionProjects/CMSC_341_proj2/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/CMSC_341_proj2.dir/rule
+.PHONY : CMakeFiles/rmqlist.h.dir/rule
 
 # Convenience name for target.
-CMSC_341_proj2: CMakeFiles/CMSC_341_proj2.dir/rule
+rmqlist.h: CMakeFiles/rmqlist.h.dir/rule
 
-.PHONY : CMSC_341_proj2
+.PHONY : rmqlist.h
 
 # clean rule for target.
-CMakeFiles/CMSC_341_proj2.dir/clean:
-	$(MAKE) -f CMakeFiles/CMSC_341_proj2.dir/build.make CMakeFiles/CMSC_341_proj2.dir/clean
-.PHONY : CMakeFiles/CMSC_341_proj2.dir/clean
+CMakeFiles/rmqlist.h.dir/clean:
+	$(MAKE) -f CMakeFiles/rmqlist.h.dir/build.make CMakeFiles/rmqlist.h.dir/clean
+.PHONY : CMakeFiles/rmqlist.h.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

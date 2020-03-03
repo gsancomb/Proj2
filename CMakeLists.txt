@@ -3,4 +3,4 @@ project(CMSC_341_proj2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(driver.cpp)
+add_executable(rmqlist.h driver.cpp)
