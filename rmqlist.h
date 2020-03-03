@@ -125,7 +125,7 @@ public:
  private:
   Node<K,V> *_head;
   Node<K,V> *_tail;
-  int _listSize;
+  int _listSize{};
 
   // **********************************
   // Private variables for RMQ go here!
@@ -158,10 +158,9 @@ void RMQList<K,V>::blockBuild(){
         auto *keyPair = new pair<K,V>(currNode->_key, currNode->_value);
         rmqBlockKey[i] = *keyPair;
         currNode = currNode ->_next;
-        delete keyPair;
+
 
         if (minindex == 0 ){
-            minKey = rmqBlockKey[i].first;
             minKeyIndex = i;
             rmqBlockMin[minValNum] = rmqBlockKey[i].second;
             minindex++;
@@ -170,7 +169,6 @@ void RMQList<K,V>::blockBuild(){
             if (minindex >= (rmqBlockSize-1)){
                 if (rmqBlockKey[minKeyIndex].second > rmqBlockKey[i].second ) {
                     rmqBlockMin[minValNum] = rmqBlockKey[i].second;
-                    minKey = rmqBlockKey[i].first;
                     minKeyIndex = i;
                 }
                 minindex = 0;
@@ -179,7 +177,6 @@ void RMQList<K,V>::blockBuild(){
             else {
                 if (rmqBlockKey[minKeyIndex].second > rmqBlockKey[i].second) {
                     rmqBlockMin[minValNum] = rmqBlockKey[i].second;
-                    minKey = rmqBlockKey[i].first;
                     minKeyIndex = i;
                 }
                 minindex++;
@@ -188,11 +185,6 @@ void RMQList<K,V>::blockBuild(){
     }
 }
 
-//cout <<rmqBlockKey[i-(rmqBlockSize-1)].first <<endl;
-//rmqBlockMin[minValNum] = minimum(rmqBlockKey,rmqBlockKey[i-(rmqBlockSize-1)].first,rmqBlockKey[i].first );
-//cout << rmqBlockMin[minValNum] << endl;
-//minValNum++;
-//minindex = 0;
 template <class K, class V>
 RMQList<K,V>::RMQList() {
     _head = nullptr;
@@ -335,34 +327,42 @@ bool RMQList<K,V>::update(const K& key, const V& value) {
 //todo query
 template <class K, class V>
 V RMQList<K,V>::query(const K& k1, const K& k2) {
-    blockBuild();
-    int index_K1=bsearch(rmqBlockKey, k1);
-    int index_K2=bsearch(rmqBlockKey, k2);
-//    V *valueArray = new V[(index_K2-index_K1)];
-    int indexDif = abs(index_K1-index_K2);
-    int lowestIndex=0;
+    if (_listSize == 0) {
+        throw range_error("The List is empty");
+    } else {
+        blockBuild();
 
-    if (index_K1 < index_K2)
-        {lowestIndex = index_K1;}
-    else
-        {lowestIndex = index_K2;}
+        int index_K1 = bsearch(rmqBlockKey, k1);
+        if (index_K1 < 0)
+            throw invalid_argument("Key 1 not in list");
 
-    V minValue = rmqBlockKey[lowestIndex].second;
-    for(int i = lowestIndex; i < lowestIndex+indexDif; i++) {
-        if (i % rmqBlockSize == 0 and (i+rmqBlockSize) < (lowestIndex+indexDif)) {
-            if (minValue > rmqBlockMin[i / rmqBlockSize]) {
-                minValue = rmqBlockMin[i / rmqBlockSize];
+        int index_K2 = bsearch(rmqBlockKey, k2);
+        if (index_K2 < 0)
+            throw invalid_argument("Key 2 not in list");
+
+        int indexDif = abs(index_K1 - index_K2);
+        int lowestIndex = 0;
+
+        if (index_K1 < index_K2) { lowestIndex = index_K1; }
+        else { lowestIndex = index_K2; }
+
+        V minValue = rmqBlockKey[lowestIndex].second;
+        for (int i = lowestIndex; i <= lowestIndex + indexDif; i++) {
+            if (i % rmqBlockSize == 0 and (i + rmqBlockSize) < (lowestIndex + indexDif)) {
+                if (minValue > rmqBlockMin[i / rmqBlockSize]) {
+                    minValue = rmqBlockMin[i / rmqBlockSize];
+                }
+                i += rmqBlockSize;
+            } else {
+                if (minValue > rmqBlockKey[i].second) {
+                    minValue = rmqBlockKey[i].second;
+                }
             }
-            i+=rmqBlockSize;
         }
-        else {
-            if (minValue > rmqBlockKey[i].second) {
-                minValue = rmqBlockKey[i].second;
-            }
-        }
+        return minValue;
     }
-    return minValue;
 }
+
 
 template <class K, class V>
 void RMQList<K,V>::dumpList() const {
@@ -376,14 +376,11 @@ void RMQList<K,V>::dumpList() const {
 }
 template <class K, class V>
 void RMQList<K,V>::dumpTable() const {
-//    Num blocks: 4
     cout << "Num blocks: " << rmqNumBlocks <<endl;
-//    Block size: 3
     cout << "Block size: " << rmqBlockSize<<endl;
-//    Block mins:
     cout << "Block mins:\n";
     for (int i = 0; i < rmqNumBlocks; i ++){
-        cout << rmqBlockMin[i] << ",  ";
+        cout << rmqBlockMin[i]<<"  " ;
 
     }
     cout << endl;
@@ -395,6 +392,8 @@ void RMQList<K,V>::clear() {
     for (int i = 0; i < _listSize; i ++) {
         remove(_head->_next->_key);
     }
+    _head = nullptr;
+    _tail = nullptr;
     delete [] rmqBlockKey;
     delete [] rmqBlockMin;
     _listSize = 0;

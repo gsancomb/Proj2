@@ -12,18 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b590818-ab79-4037-beaa-1ab18db66940" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytest.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/gsancomb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMSC_341_proj2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMSC_341_proj2.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rmqlist.h.dir/driver.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rmqlist.h.dir/driver.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/rmqlist.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/rmqlist.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/driver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/driver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driver.txt" beforeDir="false" afterPath="$PROJECT_DIR$/driver.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rmqlist.h" beforeDir="false" afterPath="$PROJECT_DIR$/rmqlist.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583187624601</updated>
       <workItem from="1583187626821" duration="37200000" />
+      <workItem from="1583226848551" duration="5823000" />
     </task>
     <servers />
   </component>
@@ -94,46 +89,47 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="283" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583188034992">
-      <screen x="50" y="27" width="1550" height="873" />
+    <state x="283" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583232603512">
+      <screen x="50" y="27" width="1550" height="777" />
     </state>
+    <state x="283" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/50.27.1550.777@50.27.1550.777" timestamp="1583232603512" />
     <state x="283" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/50.27.1550.873@50.27.1550.873" timestamp="1583188034992" />
     <state x="558" y="212" width="524" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583188090620">
       <screen x="50" y="27" width="1550" height="873" />
     </state>
     <state x="558" y="212" width="524" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/50.27.1550.873@50.27.1550.873" timestamp="1583188090620" />
-    <state width="1504" height="203" key="GridCell.Tab.0.bottom" timestamp="1583226132650">
+    <state width="709" height="1" key="GridCell.Tab.0.bottom" timestamp="1583232627344">
       <screen x="50" y="27" width="1550" height="777" />
     </state>
-    <state width="1504" height="203" key="GridCell.Tab.0.bottom/50.27.1550.777@50.27.1550.777" timestamp="1583226132650" />
-    <state width="1504" height="203" key="GridCell.Tab.0.center" timestamp="1583226132650">
+    <state width="709" height="1" key="GridCell.Tab.0.bottom/50.27.1550.777@50.27.1550.777" timestamp="1583232627344" />
+    <state width="709" height="1" key="GridCell.Tab.0.center" timestamp="1583232627343">
       <screen x="50" y="27" width="1550" height="777" />
     </state>
-    <state width="1504" height="203" key="GridCell.Tab.0.center/50.27.1550.777@50.27.1550.777" timestamp="1583226132650" />
-    <state width="1504" height="203" key="GridCell.Tab.0.left" timestamp="1583226132649">
+    <state width="709" height="1" key="GridCell.Tab.0.center/50.27.1550.777@50.27.1550.777" timestamp="1583232627343" />
+    <state width="709" height="1" key="GridCell.Tab.0.left" timestamp="1583232627343">
       <screen x="50" y="27" width="1550" height="777" />
     </state>
-    <state width="1504" height="203" key="GridCell.Tab.0.left/50.27.1550.777@50.27.1550.777" timestamp="1583226132649" />
-    <state width="1504" height="203" key="GridCell.Tab.0.right" timestamp="1583226132650">
+    <state width="709" height="1" key="GridCell.Tab.0.left/50.27.1550.777@50.27.1550.777" timestamp="1583232627343" />
+    <state width="709" height="1" key="GridCell.Tab.0.right" timestamp="1583232627344">
       <screen x="50" y="27" width="1550" height="777" />
     </state>
-    <state width="1504" height="203" key="GridCell.Tab.0.right/50.27.1550.777@50.27.1550.777" timestamp="1583226132650" />
-    <state width="1504" height="203" key="GridCell.Tab.1.bottom" timestamp="1583226132652">
+    <state width="709" height="1" key="GridCell.Tab.0.right/50.27.1550.777@50.27.1550.777" timestamp="1583232627344" />
+    <state width="1504" height="-12" key="GridCell.Tab.1.bottom" timestamp="1583232627342">
       <screen x="50" y="27" width="1550" height="777" />
     </state>
-    <state width="1504" height="203" key="GridCell.Tab.1.bottom/50.27.1550.777@50.27.1550.777" timestamp="1583226132652" />
-    <state width="1504" height="203" key="GridCell.Tab.1.center" timestamp="1583226132651">
+    <state width="1504" height="-12" key="GridCell.Tab.1.bottom/50.27.1550.777@50.27.1550.777" timestamp="1583232627342" />
+    <state width="1504" height="-12" key="GridCell.Tab.1.center" timestamp="1583232627341">
       <screen x="50" y="27" width="1550" height="777" />
     </state>
-    <state width="1504" height="203" key="GridCell.Tab.1.center/50.27.1550.777@50.27.1550.777" timestamp="1583226132651" />
-    <state width="1504" height="203" key="GridCell.Tab.1.left" timestamp="1583226132651">
+    <state width="1504" height="-12" key="GridCell.Tab.1.center/50.27.1550.777@50.27.1550.777" timestamp="1583232627341" />
+    <state width="1504" height="-12" key="GridCell.Tab.1.left" timestamp="1583232627340">
       <screen x="50" y="27" width="1550" height="777" />
     </state>
-    <state width="1504" height="203" key="GridCell.Tab.1.left/50.27.1550.777@50.27.1550.777" timestamp="1583226132651" />
-    <state width="1504" height="203" key="GridCell.Tab.1.right" timestamp="1583226132652">
+    <state width="1504" height="-12" key="GridCell.Tab.1.left/50.27.1550.777@50.27.1550.777" timestamp="1583232627340" />
+    <state width="1504" height="-12" key="GridCell.Tab.1.right" timestamp="1583232627341">
       <screen x="50" y="27" width="1550" height="777" />
     </state>
-    <state width="1504" height="203" key="GridCell.Tab.1.right/50.27.1550.777@50.27.1550.777" timestamp="1583226132652" />
+    <state width="1504" height="-12" key="GridCell.Tab.1.right/50.27.1550.777@50.27.1550.777" timestamp="1583232627341" />
     <state x="569" y="59" width="501" height="711" key="refactoring.ChangeSignatureDialog" timestamp="1583204290430">
       <screen x="50" y="27" width="1550" height="777" />
     </state>
@@ -143,16 +139,5 @@
     </state>
     <state x="488" y="125" width="672" height="678" key="search.everywhere.popup/50.27.1550.777@50.27.1550.777" timestamp="1583199557223" />
     <state x="488" y="137" width="672" height="762" key="search.everywhere.popup/50.27.1550.873@50.27.1550.873" timestamp="1583202085608" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/rmqlist.h</url>
-          <line>343</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
